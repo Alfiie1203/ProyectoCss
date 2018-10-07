@@ -1,0 +1,137 @@
+body {
+	font-family: Indie Flower;
+}
+
+.container {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.container div {
+	box-sizing: border-box;
+	min-width: 150px;
+	padding: 20px;
+}
+
+.c {
+	color: black;
+	background-color:  #5b7989;
+}
+
+.c1 {
+	color: black;
+	background-color:  #5b7989;
+}
+
+.c2 {
+	color: black;
+	background-color: #82c3a6;
+}
+
+.c3 {
+	color: black;
+	background-color: #d5c75f;
+}
+
+.c4 {
+	color: black;
+	background-color: #C6d5c5;
+}
+
+.c5 {
+	color: white;
+	background-color: #ED6A5A;
+}
+
+.container {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+
+.c1, .c2, .c3, .c4, .c5 {
+	width: 100%;
+}
+
+@media (min-width: 600px) {
+	.c {
+		width: 100%;
+	}
+	.c1 {
+		width: 100%;
+	}
+
+	.c2 {
+		width: 100%;
+	}
+
+	.c3 {
+		width: 100%
+	}
+
+	.c4, .c5 {
+		width: 50%;
+	}
+}
+
+@media (min-width: 800px) {
+	.c {
+		width: 100%;
+	}
+	.c1 {
+		width: 100%;
+	}
+
+	.c2 {
+		width: 100%;
+	}
+	.c3 {
+		width: 50%;
+	}
+
+	.c4, .c5 {
+		width: 25%;
+	}
+
+	.container {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+
+#imagen1 img:hover{
+	transform: rotateZ(-10deg);
+	border: solid 2px black;
+	box-shadow: -10px 10px 15px #82c3a6 ;
+}
+
+#imagen2 img:hover{
+	transform: translate(20px,-5px);	
+	border: solid 2px black;
+	box-shadow: -10px 10px 15px #82c3a6 ;
+}
+
+
+#estilo1 img{
+	-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+	filter: grayscale(100%);
+}
+
+#estilo2 img{
+	-webkit-filter: blur(10px); /* Chrome, Safari, Opera */
+	filter: blur(10px);
+}
+
+#estilo3 img{
+	-webkit-filter: invert(100%); /* Chrome, Safari, Opera */
+	filter: invert(100%);
+}
+
+#estilo4 img{
+	-webkit-filter: sepia(90%); /* Chrome, Safari, Opera */
+	filter: sepia(90%);
+}
